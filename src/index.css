@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom Sleek Dark Web Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0F19;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+body {
+  background-color: #090D16;
+  color: #F1F5F9;
+  font-family: var(--font-sans);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* LIGHT THEME OVERRIDES */
+html.light body {
+  background-color: #FAF6EE !important;
+  color: #1C1917 !important;
+}
+
+.light main, 
+.light #main-content-window {
+  background-color: #FAF6EE !important;
+}
+
+/* Sidebar overrides */
+.light aside#sidebar-container {
+  background-color: #F5EFE0 !important;
+  border-right: 1px solid #DFD7C2 !important;
+}
+
+.light #sidebar-header {
+  background-color: #FAF6EE !important;
+  border-bottom: 1px solid #DFD7C2 !important;
+}
+
+.light #sidebar-header h1 {
+  color: #1C1917 !important;
+}
+
+.light #sidebar-header p {
+  color: #78716C !important;
+}
+
+.light #sidebar-navigation {
+  background-color: #F5EFE0 !important;
+}
+
+.light #sidebar-navigation button:not(.bg-indigo-600) {
+  color: #44403C !important;
+}
+
+.light #sidebar-navigation button:not(.bg-indigo-600):hover {
+  background-color: #FAF6EE !important;
+  color: #1C1917 !important;
+}
+
+.light #sidebar-gateway {
+  background-color: #FAF6EE !important;
+  border-top: 1px solid #DFD7C2 !important;
+}
+
+.light #sidebar-gateway > div {
+  background-color: #FFFDF8 !important;
+  border-color: #DFD7C2 !important;
+}
+
+.light #sidebar-gateway div.border-b {
+  border-color: #DFD7C2 !important;
+}
+
+.light #sidebar-gateway .text-slate-350,
+.light #sidebar-gateway .text-slate-300,
+.light #sidebar-gateway .text-slate-400 {
+  color: #78716C !important;
+}
+
+.light #sidebar-gateway .text-slate-205,
+.light #sidebar-gateway .text-slate-200 {
+  color: #1C1917 !important;
+}
+
+.light #sidebar-gateway .border-t {
+  border-color: #DFD7C2 !important;
+}
+
+/* Header overrides */
+.light header {
+  background-color: #FFFDF8 !important;
+  border-bottom: 1px solid #DFD7C2 !important;
+}
+
+.light header span {
+  color: #44403C !important;
+}
+
+.light header .text-slate-100 {
+  color: #1C1917 !important;
+}
+
+.light header .bg-emerald-500\/10 {
+  background-color: #E6F4EA !important;
+  color: #137333 !important;
+  border-color: #CEEAD6 !important;
+}
+
+.light header .text-indigo-400 {
+  color: #4F46E5 !important;
+}
+
+.light header .h-3.w-px {
+  background-color: #DFD7C2 !important;
+}
+
+/* Card boxes background across Dashboard, Providers, Agents */
+.light .bg-\[\#0F172A\] {
+  background-color: #FFFDF8 !important;
+  border-color: #DFD7C2 !important;
+}
+
+.light .border-\[\#1E293B\] {
+  border-color: #DFD7C2 !important;
+}
+
+.light .bg-\[\#131B2E\] {
+  background-color: #FAF5EA !important;
+  border-color: #DFD7C2 !important;
+}
+
+.light .bg-\[\#090D16\] {
+  background-color: #F3EDE0 !important;
+  border-color: #DFD7C2 !important;
+}
+
+/* Texts and input overrides */
+.light .text-slate-100 {
+  color: #1C1917 !important;
+}
+.light .text-slate-200 {
+  color: #2D3748 !important;
+}
+.light .text-slate-350,
+.light .text-slate-300 {
+  color: #44403C !important;
+}
+.light .text-slate-400 {
+  color: #78716C !important;
+}
+.light .text-slate-500 {
+  color: #8C8581 !important;
+}
+.light .text-indigo-400 {
+  color: #4F46E5 !important;
+}
+.light .text-indigo-305,
+.light .text-indigo-300 {
+  color: #6366F1 !important;
+}
+
+/* Modals overlays */
+.light .bg-black\/80 {
+  background-color: rgba(28, 25, 23, 0.45) !important;
+}
+
+.light .bg-slate-900 {
+  background-color: #FFFDF8 !important;
+  border-color: #DFD7C2 !important;
+}
+
+.light h3.text-slate-100, 
+.light h2.text-slate-100, 
+.light h4.text-slate-100,
+.light h4.text-slate-200 {
+  color: #1C1917 !important;
+}
+
+/* Inputs, Selects, and Textareas */
+.light input[type="text"],
+.light input[type="password"],
+.light select,
+.light textarea {
+  background-color: #FFFDF8 !important;
+  border-color: #DFD7C2 !important;
+  color: #1C1917 !important;
+}
+
+.light select option {
+  background-color: #FFFDF8 !important;
+  color: #1C1917 !important;
+}
+
+/* Slider Overrides (the background of the range track) */
+.light input[type="range"] {
+  background-color: #E2E8F0 !important;
+}
+
+.light .text-emerald-400 {
+  color: #137333 !important;
+}
+
+.light .bg-emerald-500\/10 {
+  background-color: #E6F4EA !important;
+  color: #137333 !important;
+  border-color: #CEEAD6 !important;
+}
+
+.light .text-amber-400 {
+  color: #B06000 !important;
+}
+
+.light .bg-amber-500\/10 {
+  background-color: #FEF7E0 !important;
+  color: #B06000 !important;
+  border-color: #FEEFC3 !important;
+}
+
+.light .text-rose-450,
+.light .text-rose-400 {
+  color: #C5221F !important;
+}
+
+.light .bg-rose-500\/10 {
+  background-color: #FCE8E6 !important;
+  color: #C5221F !important;
+  border-color: #FAD2CF !important;
+}
+
+/* Buttons which have border-[#1E293B] and text-slate-300 on hover bg-slate-800 */
+.light .bg-slate-800 {
+  background-color: #FAF5EA !important;
+  border-color: #DFD7C2 !important;
+  color: #44403C !important;
+}
+.light .bg-slate-800:hover {
+  background-color: #EFECE3 !important;
+  color: #1C1917 !important;
+}
+
+.light .bg-slate-805 {
+  background-color: #FFFDF8 !important;
+}
+
+.light .bg-slate-850 {
+  background-color: #FFFDF8 !important;
+  border-color: #DFD7C2 !important;
+  color: #44403C !important;
+}
+.light .bg-slate-850:hover {
+  background-color: #FAF5EA !important;
+  color: #1C1917 !important;
+}
+
+/* Logs and terminals */
+.light .bg-\[\#090D16\] {
+  background-color: #FFFDF8 !important;
+  border-color: #DFD7C2 !important;
+}
+
+.light .text-indigo-405 {
+  color: #4F46E5 !important;
+}
+
+.light .border-r-\[\#1E293B\] {
+  border-color: #DFD7C2 !important;
+}
+
+/* Scrollbar overrides for light mode */
+.light ::-webkit-scrollbar-track {
+  background: #FAF6EE;
+}
+.light ::-webkit-scrollbar-thumb {
+  background: #DFD7C2;
+}
+.light ::-webkit-scrollbar-thumb:hover {
+  background: #C5BCAB;
+}
+
+/* Chat views particularities */
+.light .bg-\[\#131B2E\]\/40 {
+  background-color: #FAF5EA !important;
+}
+
+.light .bg-indigo-600\/15 {
+  background-color: rgba(99, 102, 241, 0.08) !important;
+  color: #1C1917 !important;
+}
+
+.light .bg-indigo-600\/10 {
+  background-color: rgba(99, 102, 241, 0.12) !important;
+}
+
+.light .border-indigo-500\/20,
+.light .border-indigo-500\/30 {
+  border-color: rgba(99, 102, 241, 0.25) !important;
+}
+
+.light .placeholder-slate-600::placeholder {
+  color: #A8A29E !important;
+}
+
+/* Custom list row background overrides for light mode */
+.light .bg-\[\#121824\] {
+  background-color: #FFFDF8 !important;
+  border-color: #DFD7C2 !important;
+}
+
+.light .hover\:bg-\[\#151C2C\]:hover {
+  background-color: #FAF5EA !important;
+}
+
+.light .bg-\[\#090D16\]\/40 {
+  background-color: rgba(243, 237, 224, 0.4) !important;
+  border-color: #DFD7C2 !important;
+}
+
+/* Selected active state for elements */
+.light .bg-indigo-605\/10 {
+  background-color: rgba(99, 102, 241, 0.1) !important;
+  border-color: rgba(99, 102, 241, 0.3) !important;
+  color: #4F46E5 !important;
+}
+
+/* Dashboard welcome gradient header */
+.light .bg-gradient-to-r.from-indigo-950\/40.to-slate-900\/40 {
+  background: linear-gradient(to right, rgba(245, 239, 224, 0.5), rgba(210, 220, 245, 0.35)) !important;
+  border-color: #DFD7C2 !important;
+}
+
+/* Helper text and status codes */
+.light .text-slate-150 {
+  color: #2D3748 !important;
+}
+
+.light .text-slate-450 {
+  color: #78716C !important;
+}
+
+.light .text-slate-405 {
+  color: #78716C !important;
+}
+
+/* Button hover offsets for control pads */
+.light .disabled\:opacity-20 {
+  opacity: 0.25 !important;
+}

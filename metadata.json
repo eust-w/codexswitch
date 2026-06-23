@@ -1,0 +1,6 @@
+{
+  "name": "codexswitch",
+  "description": "A beautifully crafted, professional local AI Coding Agent & MCP Server workstation to manage agents, LLM providers, model routing, and system logs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
